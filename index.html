@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style/reset.css">
+  <link rel="stylesheet" href="./style/main.css">
+  <script defer src="./scripts/script.js"></script>
+  <title>Interactive pricing component</title>
+
+  
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+
+<body>
+  <main class="card-wrapper">
+    <h1 class="sr-only">Interactive pricing component</h1>
+
+    <header class="pricing-card-header">
+      <h2>Simple, traffic-based pricing</h2>
+      <p> Sign-up for our 30-day trial. 
+        No credit card required.</p>
+    </header>
+
+    <form class="pricing-card" action="">
+      <span class="pricing-card_views-range">100K PAGEVIEWS</span>
+
+      <input class="pricing-card_views-range" type="range" name="range" id="range" 
+        min="0" max="100" value="10">
+
+        <div class="pricing-card_price-contains">
+          <span class="pricing-card_price">$16.00</span>
+          <span class="pricing-card_billing-frequency">/month</span>
+        </div>
+
+        <label class="pricing-card_billing-frequency-toggle" for="billing-freq">
+          <span class="pricing-card_freq-option pricing-card_freq-option--monthly">Monthly Billing</span>
+
+          <input type="checkbox" name="billing-freq" id="billing-freq">
+
+          <div class="toggle">
+            <span class="toggle-circle"></span>
+          </div>
+
+          <span class="pricing-card_freq-option pricing-card_freq-option--annual">Yearly Billing</span>
+
+        </label>
+
+        <div class="price-card_bottom"></div>
+
+        <div class="pricing-card_features">
+          <span class="pricing-card_feature"></span>
+          <img src="./images/icon-check.svg" alt="icon">
+          <span>Unlimited websites</span>
+        </div>
+
+        <div class="pricing-card_features">
+          <span class="pricing-card_feature"></span>
+          <img src="./images/icon-check.svg" alt="">
+          <span>100% data ownership</span>
+        </div>
+
+        <div class="pricing-card_features">
+          <span class="pricing-card_feature"></span>
+          <img src="./images/icon-check.svg" alt="">
+          <span>Email reports</span>
+        </div>
+
+        <button type="submit" class="pricing-card_submit-btn">Start my trial</button>
+
+
+
+    </form>
+
+
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://github.com/GorskiAnthony" target="_blank">GorskiAnthony</a>. 
+    Coded by <a href="#">https://github.com/Marc-Juvenal/</a>.
+  </div>
+</body>
+</html>
